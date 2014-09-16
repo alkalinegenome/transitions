@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+* {
+	box-sizing: border-box;
+}
+
 img {
 	display:block;
 	width: 100%;
@@ -8,9 +12,22 @@ img {
 .card {
 	margin: 0 auto;
 	width: 50%;
+	position: relative;
+	overflow:hidden;
 }
 
 .card__text {
 	background-color: rgba(0,0,0,.3);
 	color: #fff;
+	position: absolute;
+	bottom: -3.125em;
+	padding: 1em;
+	width: 100%;
+	transition: all 200ms linear;
+	opacity: 0;
+}
+
+.card:hover .card__text {
+	bottom: 0;
+	opacity: 1;
 }
