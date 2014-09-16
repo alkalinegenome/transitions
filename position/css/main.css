@@ -1,3 +1,16 @@
 @charset "UTF-8";
-/* CSS Document */
 
+img {
+	display:block;
+	width: 100%;
+	}
+
+.card {
+	margin: 0 auto;
+	width: 50%;
+}
+
+.card__text {
+	background-color: rgba(0,0,0,.3);
+	color: #fff;
+}
