@@ -6,8 +6,24 @@
 .btn:visited {
 	display: inline-block;
 	padding: .5em .75em;
-	border-radius: 6px;
-	background-color: red;
-	color: #FFF;
+	border-radius: 16px;
+	background-color: wheat;
+	color: indianred;
 	text-decoration: none;
+	font-size: 3em;
+	font-weight: 100;
+	font-family: Helvetica, Arial, sans-serif;
+	transition: background-color 350ms linear, border-radius 1000ms linear; /* property to chage, time in ms, timing function like in AE */
+	
+	transition: all 250ms linear; /* use "all" property to make the transition happen for any properties that change */
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+	background-color: indianred;
+	color: #FFF;
+	text-shadow: black 1px 1px 1px;
+	font-weight: 400;
+	border-radius: 25px;
 }
