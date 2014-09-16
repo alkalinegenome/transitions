@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.btn,
+.btn:link,
+.btn:visited {
+	display: inline-block;
+	padding: .5em .75em;
+	border-radius: 6px;
+	background-color: red;
+	color: #FFF;
+	text-decoration: none;
+}
